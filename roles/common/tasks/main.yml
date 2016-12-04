@@ -13,3 +13,9 @@
   service:
     name: nginx
     state: started
+
+- name: clone photowang to nginx html
+  git:
+    repo: 'git@github.com:jasonliu03/photowang.git'
+    dest: /usr/share/nginx/html/photowang
+    update: yes
