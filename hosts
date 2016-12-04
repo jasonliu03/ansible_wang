@@ -1,0 +1,7 @@
+centos-jason	ip=13.75.93.113	remote_user=root
+
+[local]
+127.0.0.1
+
+[HS]
+centos-jason

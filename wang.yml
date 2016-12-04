@@ -1,0 +1,6 @@
+- name: setup wang site
+  hosts: HS
+  connection: local
+  roles:
+    - common
+  
