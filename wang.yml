@@ -2,5 +2,10 @@
   hosts: WEB
   connection: local
   roles:
-    - web
+    - nginx
   
+- name: install && config uwsgi
+  hosts: WEB
+  connection: local
+  roles:
+    - uwsgi

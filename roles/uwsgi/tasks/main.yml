@@ -1,0 +1,14 @@
+---
+- name: install uwsgi
+  pip:
+    name: uwsgi
+    state: latest
+
+- name: config uwsgi
+  copy:
+    src: uwsgi.ini
+    dest: /etc/uwsgi9090.ini
+    
+- name: start uwsgi
+  command: uwsgi --ini /etc/uwsgi.ini --enable-threads
+
